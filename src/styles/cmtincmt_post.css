@@ -1,0 +1,35 @@
+.post-cmt2{
+    height: auto;
+    display: flex;
+    width: 750px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inp-cmt2{
+    padding: 8px 15px 8px 15px;
+    text-justify: center;
+    font-size:14.5px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    margin-left: 12px;
+    width: 650px;
+    resize: none;
+    overflow: hidden;
+    height: auto;
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.1);
+}
+.inp-cmt2:focus{
+    outline: 0px solid transparent;
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+.cmtincmt-post-container{
+    height: auto;
+    width: 800px;
+    margin: auto;
+    padding: 10px 0 10px 0;
+    display: contents;
+}

@@ -1,0 +1,26 @@
+.ava-post1{
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+}
+.info-detail{
+    width: 390px;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.detail-title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.detail-text{
+    width: 390px;
+    height: auto;
+}
+.school-text,
+.address-text{
+    color: #fff;
+    margin-bottom: 10px;
+}

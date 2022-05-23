@@ -1,0 +1,66 @@
+.bg-uploadPost{
+    height: auto;
+    width: 900px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color:rgb(218, 217, 217);
+    border-radius: 8px;
+    padding-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-up{
+    height: 50px;
+}
+.post-cmt3{
+    height: auto;
+    display: flex;
+    width: 860px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.inp-cmt1{
+    padding: 10px 15px 5px 25px;
+    text-justify: center;
+    font-size:14.5px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+    margin-left: 12px;
+    width: 750px;
+    resize: none;
+    overflow: hidden;
+    height: auto;
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.1);
+}
+.inp-cmt1:focus{
+    outline: 0px solid transparent;
+}
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+.right-foot1{
+    padding: 12px 0 12px 0;
+    width: 300px;
+    float: right;
+    text-align: center;
+}
+.center-foot1{
+    padding: 12px 0 12px 0;
+    width: 300px;
+    text-align: center;
+    float: left;
+}
+.left-foot1{
+    padding: 12px 0 12px 0;
+    width: 300px;
+    text-align: center;
+    float: left;
+}
+.right-foot1:hover,
+.center-foot1:hover,
+.left-foot1:hover{
+    border-radius: 9px;
+    background-color: rgb(198, 198, 198);
+    cursor: pointer;
+}

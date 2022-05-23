@@ -1,0 +1,10 @@
+main {
+    background: #D7DAEB;
+    grid-area: main;
+    overflow-y: auto;
+  }
+  .bg-gr{
+    height: 790px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
