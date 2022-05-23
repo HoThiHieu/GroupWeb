@@ -1,13 +1,35 @@
-import { Link } from 'react-router-dom'
+
+import { Link, useNavigate } from 'react-router-dom'
 import { UserOutlined, UnlockOutlined } from '@ant-design/icons'
 
+import auth from '../../../api/auth'
+import avatar from '../../../assets/images/avatar.svg'
 
-import avatar from '../../../assets/images/avatar2.svg'
 
-
-import './login.scss'
+import './login.css'
 
 function Login() {
+    const navigate = useNavigate()
+
+    const handleSubmit = async (event) => {
+        try {
+            event.preventDefault()
+            const user ={
+                email: event.target[0].value,
+                password: event.target[1].value
+            }
+            const response = await auth.login(user)
+            if (response.request.status === 200) {
+                // setToken(response.data.token)
+                // localStorage.setItem('token', response.data.token)
+                navigate('/home')
+                alert(response.data.message)
+            }
+        } catch (error) {
+            //TODO: hiển bị thông báo theo từng error code (error.request.status === 404)
+            alert(error.response.data.message)
+        }
+    }
     return (
         <div className="login-container">
             <div className="login-content">
@@ -16,20 +38,21 @@ function Login() {
                 <form
                     name="login"
                     className="login-content__form"
+                    onSubmit={handleSubmit}
                 >
                     <div className="login-content__form__item">
                         <UserOutlined className="icon"/>
-                        <input type="text" class="input-field" placeholder="Enter name " required />
+                        <input type="text" className="input-field" placeholder="Email" required />
                     </div>
 
                     <div className="login-content__form__item">
                         <UnlockOutlined className="icon" />
-                        <input type="password" class="input-field" placeholder="Enter password" required />
+                        <input type="password" className="input-field" placeholder="Password" required/>
                     </div>
 
                     <label className="forgot-password">Forgot Password</label>
 
-                    <button type="submit" class="button-submit">LOGIN</button>
+                    <button type="submit" className="button-submit" >LOGIN</button>
                     <Link className="create-account" to="/register">
                         Create new account
                     </Link>
