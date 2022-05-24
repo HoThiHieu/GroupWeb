@@ -2,7 +2,7 @@ import React from 'react'
 import {IoMdSchool} from 'react-icons/io'
 import {FaUserFriends} from 'react-icons/fa'
 import {CgFeed} from 'react-icons/cg'
-import {ImStarFull,ImStarHalf,ImStarEmpty} from 'react-icons/im'
+import {ImStarFull,ImStarHalf} from 'react-icons/im'
 
 const InfoGroup = ({openShow}) => {
   return (
@@ -19,7 +19,7 @@ const InfoGroup = ({openShow}) => {
                     <FaUserFriends size={22} className="ava-post1" color='rgb(210, 210, 210)'/>
                     <div className="address-text">2.487 thành viên</div>
                     <CgFeed size={22} className="ava-post1" color='rgb(210, 210, 210)'/>
-                    <div className="address-text"><ImStarFull/><ImStarFull/><ImStarFull/><ImStarFull/><ImStarHalf/>・4.3 sao</div>
+                    <div className="address-text"><ImStarFull className='ic-star'/><ImStarFull className='ic-star'/><ImStarFull className='ic-star'/><ImStarFull className='ic-star'/><ImStarHalf className='ic-star'/>・4.3 sao</div>
                 </div>
             </div>
         </div>

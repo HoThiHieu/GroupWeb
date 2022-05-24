@@ -5,7 +5,10 @@ export default function EditAdmin({infoEdit,showEdit,closeEdit}) {
     <div className="bg-modal" style={{display: infoEdit ? 'flex' : 'none' }}>
     <div className="modal-editAdmin" >
       <div className="close" onClick={function(event){showEdit()}}>+</div>
-        <img width="100px" src="https://scontent.fdad4-1.fna.fbcdn.net/v/t1.6435-9/165897034_1392111231145880_6097197829076764690_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=B5O7s6PBdtwAX-vUmXb&_nc_ht=scontent.fdad4-1.fna&oh=00_AT-H6ARvIhky2UvnkG5kyIezzEs2lBxTJPiKNANHEUUBAg&oe=62B07CAB" height="100px" className="ava-post"/>
+        <img width="100px" src="https://scontent.fdad4-1.fna.fbcdn.net/v/t1.6435-9/165897034_1392111231145880_6097197829076764690_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=B5O7s6PBdtwAX-vUmXb&_nc_ht=scontent.fdad4-1.fna&oh=00_AT-H6ARvIhky2UvnkG5kyIezzEs2lBxTJPiKNANHEUUBAg&oe=62B07CAB" height="100px" className="ava-post" style={{marginRight: "5px"}}/>
+        <input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg, image/jpg"></input>
         <form action>
         <div className="table_content">
           <tbody>
@@ -16,7 +19,8 @@ export default function EditAdmin({infoEdit,showEdit,closeEdit}) {
             </tr>
             <tr>
             <td className="no_border">Gmail</td>
-              <td className="no_border">oppahd96@gmail.com</td>
+            <td className="no_border"><input type="gmail" id="mail" name="mail" readOnly value="oppahd96@gmail.com" className="inputE"
+          size="27"/></td>
             </tr>
             <tr>
             <td className="no_border">SĐT</td>

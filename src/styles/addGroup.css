@@ -1,0 +1,123 @@
+.bg-addGr{
+    z-index: 2000;
+    width: 1536px;
+    height: 791px;
+    background-color: rgb(113, 215, 229);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.info-addGr{
+    width: 350px;
+    background-color: rgb(113, 215, 229);
+    height: 791px;
+    border: 1px solid rgb(74, 74, 74);
+    padding: 10px;
+    float: left;
+}
+.icon-close1{
+    color: rgb(126, 126, 126);
+    float: left;
+}
+.icon-close1:hover{
+    color: rgb(52, 52, 52);
+    cursor: pointer;
+	transition: 0.5s all;
+}
+.demo-addGr{
+    width: 1142px;
+    background-color: rgb(113, 215, 229);
+    height: 791px;
+    border: 1px solid rgb(74, 74, 74);
+    padding: 100px 10px 10px 10px;
+    float: right;
+}
+.ava-detail-gr{
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.detail-info-addGr{
+    width: 340px;
+    padding: 10px 0px 10px 10px;
+    height: 620px;
+    margin-top: 50px;
+}
+.title-addGr{
+    font-size: 25px;
+    font-weight: bold;
+}
+.name-user{
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.role-user{
+    font-size: 15px;
+}
+.name-gr{
+    margin-top: 25px;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+}
+.topic-gr{
+    margin-top: 15px;
+    padding: 10px;
+    width: 300px;
+    height: 48px;
+    font-size: 20px;
+}
+.create-gr{
+    width: 348px;
+    border-radius:15px;
+    height: 40px;
+    padding: 11px 0 0 0;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+}
+.create-gr:hover{
+    background-color: rgb(174, 174, 174);
+    transition: .5s all;
+}
+.bg-img-demo{
+    width: inherit;
+    border-radius: 15px;
+}
+.bg-img-container{
+    width: inherit;
+    height: auto;
+}
+.demo-body{
+    width: 1110px;
+    height: 140px;
+    background-color: rgb(104, 156, 156);
+    border-radius: 15px;
+    padding: 15px;
+}
+.bg-demo-body{
+    width: inherit;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgb(104, 156, 156);
+    border: 1px solid rgb(74, 74, 74);
+}
+.line-hr{
+    margin: 20px 20px 20px 20px;
+    color:beige;
+}
+.demo-body-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 17px;
+}
+.demo-body-topic{
+    font-size: 17px;
+    margin-left: 17px;
+}
+.navbar-title{
+    width: 130px;
+    float: left;
+}

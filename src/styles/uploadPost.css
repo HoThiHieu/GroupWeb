@@ -7,6 +7,7 @@
     border-radius: 8px;
     padding-top: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(85, 85, 85);
 }
 .btn-up{
     height: 50px;
@@ -32,6 +33,7 @@
     height: auto;
     transition: box-shadow 0.5s ease;
     box-shadow: 0 5px 3px rgba(0,0,0,0.1);
+    
 }
 .inp-cmt1:focus{
     outline: 0px solid transparent;
