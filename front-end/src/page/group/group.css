@@ -1,0 +1,224 @@
+main {
+    background: #D7DAEB;
+    grid-area: main;
+    overflow-y: auto;
+  }
+.bg-gr{
+    height: 790px;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gr-search{
+  width: 350px;
+  height: 100%;
+  position: relative;
+  background-color: #dde5f4;
+  float: left;
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+.gr-list{
+  padding: 10px;
+  width: 730px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; 
+  background-color: #dde5f4;
+  position:relative;
+  float: left;
+  border: 1px solid #ffffff;
+}
+.gr-info{
+  margin-top: 60px;
+  padding: 10px 0 10px 10px;
+  width: 450px;
+  height: 710px;
+  overflow: hidden;
+  background-color: #dde5f4;
+  display: block;
+  position:relative;
+  float: right;
+}
+.header-grs{
+  padding: 10px;
+  margin-top: 60px;
+  width: 328px;
+  height: auto;
+  overflow:hidden;  /* code added to prevent scroll */
+  position:fixed;
+  background-color: #dde5f4;
+  /* border: 1px solid rgb(99, 99, 99); */
+  border: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1)
+}
+.footer-grs{
+  position: static;
+  height: auto;
+  width: inherit;
+  margin-top: 220px;
+  background-color: #dde5f4;
+  padding: 10px;
+}
+.title-grs{
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 10px;
+  color: #000;
+}
+.search-grs{
+  padding: 10px 14px 10px 14px;
+  border-radius: 20px;
+  width: 290px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+}
+.search-grs:hover{
+  background-color: rgb(225, 225, 225);
+  transition: 0.5s all;
+}
+.btn-add-gr{
+  width: 292px;
+  padding: 10px 14px 10px 14px;
+  height: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(78, 129, 205);
+}
+.icon-add-gr{
+  position: relative;
+  top: 2px;
+  margin-right: 3px;
+}
+.btn-add-gr:hover{
+  cursor: pointer;
+  background-color: rgb(53, 90, 146);
+  transition: 0.5s all;
+}
+.title-footer-grs{
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 10px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.item-group-grs{
+  width: 330px;
+  height: auto;
+}
+.ava-item-group-joined{
+  border-radius: 10px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+.item-group-joined{
+  width: 306px;
+  height: 75px;
+  padding: 5px;
+}
+.name-group-joined{
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.active-group-joined{
+  font-size: 15px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.name-group-joined:hover,
+.active-group-joined:hover,
+.detail-group-wnj:hover,
+.name-group-wnj:hover{
+  cursor: pointer;
+}
+.item-group-joined:hover{
+  border-radius: 10px;
+  background-color: rgb(82, 120, 176);
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.item-group{
+  margin-top: 60px;
+  width: inherit;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.item-group-wnj{
+  width: 345px;
+  height: 105px;
+  padding: 5px;
+}
+.item-group-wnj:hover{
+  border-radius: 10px;
+  background-color: rgb(102, 145, 211);
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.notifi-gri{
+    right: 50%;
+    bottom: 55%;
+    transform: translate(50%,50%);
+    position: absolute;
+    font-size:20px;
+}
+.icon-error{
+  position: relative;
+  top:5px;
+  margin-right: 5px;
+}
+.name-group-wnj{
+  margin-top: 7px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 17px;
+  height: 23px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.detail-group-wnj{
+  font-size: 15px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.icon-group{
+  margin-right: 5px;
+  color: rgb(55, 55, 55);
+  position: relative;
+  top: 2px;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  background: #fff;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(102, 145, 211); 
+  border-radius: 2px;
+}
+

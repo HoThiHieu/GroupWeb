@@ -1,0 +1,183 @@
+
+.bg-modal{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(47, 47, 47, 0.7);
+	position: fixed;
+	z-index: 1040;
+	top: 0;
+	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-modal1{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(47, 47, 47, 0.7);
+	position: fixed;
+	z-index: 1040;
+	top: 0;
+	margin-top: 30px;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.modal-editAdmin{
+	width: 450px;
+	height: 600px;
+	background-color: #dde5f4;
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px 20px;
+	position: relative;
+}
+.modal-content{
+	width: 450px;
+	height: 500px;
+	background-color: #dde5f4;
+	border-radius: 6px;
+	text-align: center;
+	padding: 50px 20px;
+	position: relative;
+}
+.modal-content1{
+	width: 450px;
+	height: auto;
+	background-color: rgb(143, 188, 232);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-room{
+	width: 850px;
+	height: 670px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-info-user-post{
+	width: 400px;
+	height: auto;
+	background-color: #4d5ec2;
+	border-radius: 14px;
+	text-align: left;
+	padding: 20px;
+	position: absolute;
+	z-index: 1;
+	justify-content: right;
+	align-items: center;
+	margin-top: 15px;
+}
+.mess-title{
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    width: 500px;
+    text-align: left;
+    padding: 10px;
+    color: #9E4242;
+}
+.send-btn{
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+}
+.form-mess{
+    float: left;
+    padding: 0 20px 10px 20px;
+}
+.form-mess textarea:focus{
+    box-shadow: 5px 5px #9E4242;
+}
+.form-mess textarea:hover{
+    cursor:grab;
+    transform: scale(1.05);
+    transition: 0.5s all;
+}
+.send-btn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s all;
+}
+.modal-user{
+	width: 480px;
+	height: 450px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-edit{
+	width: 520px;
+	height: 650px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.modal-editUser{
+	width: 500px;
+	height: 520px;
+	background-color: rgb(255, 225, 252);
+	border-radius: 6px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+.editbtn{
+	width: 15px;
+	display: initial;
+	float: left;
+	padding: 3px 25px;
+}
+.close{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 35px;
+	Cursor: pointer;
+}
+.close:hover{
+	transform: rotate(45deg);
+	transition: 0.5s all;
+}
+.button1 {
+	background-color: 	 #8d98d8;
+	border-radius: 20px;
+	text-decoration: none;
+	margin-top: 20px;
+	padding: 10px 30px;
+	color: rgb(0, 0, 0);
+	display: inline-block;
+	border:none;
+}
+.button1:hover {
+	cursor: pointer;
+		background-color: #4d5ec2;
+		color: #fff;
+		box-shadow: 0 0 5px #4d5ec2
+		
+	}
+textarea{
+	resize: none;
+	padding: 5px;
+}
+.input-date{
+	width: 220px;
+	height:35px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	padding-left: 10px;
+}
+.input-file{
+	margin: 10px 0 10px 100px;
+}

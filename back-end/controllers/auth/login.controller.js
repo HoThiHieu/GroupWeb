@@ -15,7 +15,7 @@ async function login (req, res){
 
             return res.status(200).json({
                 message: 'Authentication successfully!',
-                // token: token,
+                user: dbUser,
             })
         } else {
             return res.status(404).json({

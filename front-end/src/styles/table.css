@@ -1,0 +1,33 @@
+table {
+  border-collapse: separate;
+  width: 80%;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 11px 10px 11px 10px;
+  text-align: left;
+  border-bottom: 1px solid rgb(102, 102, 102);
+}
+
+.table_content {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.no_border {
+  border-bottom: 0px solid #fff;
+}
+
+.inputE {
+  padding: 7px 12px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.inputE:hover {
+  background-color: lightblue;
+}

@@ -1,0 +1,122 @@
+
+.bg-info-gr-container{
+    margin-top: 60px;
+    width: 1184px;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(113, 215, 229);
+    position:relative;
+    float: left;
+    border: 1px solid rgb(99, 99, 99);
+}
+
+.bg-img-demo1{
+    width: inherit;
+    border-radius: 0 0 8px 8px;
+}
+.bg-img-container1{
+    width: inherit;
+    height: auto;
+}
+.demo-body1{
+    width: 1160px;
+    height: auto;
+    background-color: rgb(128, 189, 189);
+    padding: 15px;
+}
+.bg-demo-body1{
+    width: inherit;
+    height: auto;
+    background-color: rgb(128, 189, 189);
+    border: 1px solid rgb(74, 74, 74);
+}
+.line-hr1{
+    margin: 20px 20px 0px 20px;
+    color:beige;
+}
+.demo-body-title1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 17px;
+}
+.demo-body-topic1{
+    font-size: 17px;
+    margin-left: 17px;
+}
+.navbar-title1{
+    width: 130px;
+    float: left;
+    height: auto;
+    display: block;
+    padding: 15px;
+    text-align: center;
+}
+.navbar-menu-gr{
+    margin-left: 20px;
+    height: 40px;
+    width: 1000px;
+}
+.navbar-title1:hover{
+    border-radius: 10px;
+    background-color: rgb(110, 160, 160);
+    transition: 0.5s all;
+}
+.active1 {
+    border-bottom: 4px solid rgb(255, 255, 255);
+    color: #fff;
+  }
+  .ava-gr{
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 10px;
+      position: relative;
+  }
+  .right-gr{
+      float: right;
+      width: 320px;
+      height: 40px;
+      padding: 2px;
+  }
+  .btn-joined{
+      color: #fff;
+      height: 30px;
+      width: 160px;
+      background-color: rgb(141, 141, 141);
+      text-align: center;
+      padding: 5px 0 0 0;
+      float: right;
+      border-radius: 8px;
+  }
+  .btn-addMem{
+      margin-left: 10px;
+      margin-right: 10px;
+    color: #fff;
+      height: 30px;
+      padding: 5px 0 0 0;
+      width: 80px;
+      text-align: center;
+      background-color: rgb(54, 113, 252);
+      float: right;
+      border-radius: 8px;
+  }
+  .btn-more{
+    color: #fff;
+    height: 27px;
+    padding: 8px 0 0 0;
+    width: 50px;
+    text-align: center;
+    background-color: rgb(141, 141, 141);
+    float: right;
+    border-radius: 8px;
+  }
+  .icon-left{
+      position: relative;
+      top: 2px;
+      margin-right: 4px;
+  }
+  .icon-right{
+      margin-left: 4px;
+      position: relative;
+      top: 3px;
+  }

@@ -1,0 +1,137 @@
+.bg-addGr{
+    width: 1536px;
+    height: 100vh;
+    /* background-color: #dde5f4; */
+    /* position: relative; */
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.info-addGr{
+    width: 100%;
+    background-color: #dde5f4;
+    /* height: 100vh; */
+    padding-top: 60px;
+    border-right: 2px solid #fff;
+    float: left;
+    position: relative;
+}
+.icon-close1{
+    color: #888;
+    margin: 20px 0 0 330px;
+
+}
+.icon-close1:hover{
+    color: #4d5ec2;
+    cursor: pointer;
+	transition: 0.5s all;
+}
+.demo-addGr{
+    width: 100%;
+    height: 100%;
+    background-color: #dde5f4;
+    border: 1px solid rgb(74, 74, 74);
+    display: flex;
+}
+.ava-detail-gr{
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.detail-info-addGr{
+    width: 340px;
+    margin: auto;
+}
+.title-addGr{
+    font-size: 25px;
+    font-weight: bold;
+}
+.name-user{
+    margin-top: 18px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.role-user{
+    font-size: 15px;
+}
+.name-gr{
+    margin-top: 25px;
+    width: 320px;
+    height: 30px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 0 0 3px rgb(0, 0, 0, 0.02);
+}
+.topic-gr{
+    margin-top: 25px;
+    width: 320px;
+    height: 30px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 0 3px rgb(0, 0, 0, 0.02);
+}
+.create-gr{
+    width: 320px;
+    height: 30px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    text-align:center;
+    box-shadow: 0 0 0 3px rgb(0, 0, 0, 0.02);
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    bottom: 5%;
+    left:6%;
+}
+.create-gr:hover{
+    background-color: #4d5ec2;
+    transition: .5s all;
+    color:#fff
+}
+.bg-img-demo{
+    width: 100%;
+    height: 430px;
+    border-radius: 15px 15px 0 0;
+}
+.bg-img-container{
+    width: 100%;
+    height: auto;
+}
+.demo-body{
+    width: 100%;
+    height: 160px;
+    border-radius: 15px;
+}
+.bg-demo-body{
+    width: 95%;
+    height: fit-content;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 15px;
+    border: none;
+    margin-top: 80px ;
+}
+.line-hr{
+    margin: 15px;
+    color:beige;
+}
+.demo-body-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 17px 0 0 17px;
+}
+.demo-body-topic{
+    font-size: 17px;
+    margin: 10px 0 0 17px;
+
+}
+.navbar-title{
+    width: 130px;
+    float: left;
+}

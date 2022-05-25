@@ -1,0 +1,86 @@
+.bg-join-group{
+    width: 385px;
+    height: 560px;
+    border-radius: 10px;
+	background-color: #548ad1;
+	border-radius: 14px;
+	text-align: left;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+	margin-top: 15px;
+}
+.icon-close{
+    color: rgb(231, 231, 231);
+    float: right;
+}
+.icon-close:hover{
+    color: rgb(187, 187, 187);
+    cursor: pointer;
+	transition: 0.5s all;
+}
+.ava-item-group-joined1{
+    border-radius: 10px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 14px;
+    margin-right: 10px;
+    object-fit: cover;
+    display: block;
+}
+.detail-group-join{
+    margin-top: 30px;
+    width: 380px;
+    height: 530px;
+}
+.title-group{
+    font-weight: bold;
+    width: inherit;
+    height: auto;
+    font-size: 20px;
+    min-height: 30px;
+    max-height: 100px;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.img-position{
+    height: 220px;
+}
+.detail-container-gr{
+    padding: 10px 20px 10px 20px;
+}
+.icon-group1{
+    margin-right: 10px;
+    color: rgb(223, 223, 223);
+    position: relative;
+    top: 4px;
+    margin-left: 30px;
+  }
+.txt-detail-group{
+      color: rgb(223, 223, 223);
+      font-size: 17px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 10px;
+  }
+.btn-join-gr{
+    padding: 10px 0 0 0;
+    text-align: center;
+    width: 385px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    position: absolute;
+    bottom: 2%;
+}
+.btn-join-gr:hover{
+    cursor:pointer;
+    background-color: rgb(187, 187, 187);
+    color:#fff;
+    transition: 0.5s all;
+}

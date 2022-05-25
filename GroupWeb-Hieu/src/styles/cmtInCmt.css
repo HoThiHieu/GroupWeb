@@ -1,0 +1,64 @@
+.cmtincmt-container{
+    display:block;
+    width: 770px;
+    height: auto;
+    float: left;
+    background-color: rgb(218, 217, 217);
+    padding: 10px;
+}
+.ava-cmtincmt{
+    height: auto;
+    width: 40px;
+    text-align: center;
+    float: left;
+}
+.cmtincmt-box{
+    height: auto;
+    width: 740px;
+}
+.cmtincmt-content{
+    height: auto;
+    width: auto;
+    float: left;
+    background-color: rgb(146, 211, 246);
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.1);
+}
+.name-box-cmtincmt{
+    font-weight: bold;
+    font-size: 14.5px;
+}
+.name-box-cmtincmt:hover{
+    cursor: pointer;
+    text-decoration:underline
+}
+.content-box-cmtincmt{
+    font-size: 14.5px;
+}
+.detail-cmtincmt{
+    width: 700px;
+    height: auto;
+    display: flex;
+    padding: 1px 0 1px 55px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.like-cmtincmt,
+.cmt-cmtincmt,
+.share-cmtincmt,
+.time-cmtincmt
+{
+    margin-top: 3px;
+    color: rgb(64, 64, 64);
+    margin-right: 15px;
+}
+.like-cmtincmt:hover,
+.cmt-cmtincmt:hover,
+.share-cmtincmt:hover,
+.time-cmtincmt:hover
+{
+    cursor: pointer;
+    text-decoration:underline
+}
