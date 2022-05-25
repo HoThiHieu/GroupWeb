@@ -18,4 +18,5 @@ app.use(express.json())
 app.use('/api/auth',  routes.auth)
 app.use('/api/users', routes.user)
 
+
 module.exports = app

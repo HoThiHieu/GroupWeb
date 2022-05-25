@@ -1,8 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const ItemGroupJoined = () => {
+  const navigate = useNavigate()
     const openInfoGroup = () => {
-        window.open("http://localhost:3000/group/03122807",'_parent');
+      navigate('/group/detail')
     }
   return (
     <div className="item-group-joined" onClick={function(event){openInfoGroup()}}>

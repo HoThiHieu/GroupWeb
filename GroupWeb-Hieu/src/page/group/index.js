@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { IoMdAdd } from 'react-icons/io'
 import { BiMessageAltError } from 'react-icons/bi'
 import ItemGroup from '../../router/itemGroup'
@@ -8,6 +9,7 @@ import ItemGroupJoined from '../../router/itemGroupJoined'
 import './group.css'
 
 const Group = () => {
+    const navigate = useNavigate()
     const [statusInfoGroup, setInfoGroup] = useState(false);
     const openInfoGroup = () => {
         setInfoGroup(true);
@@ -16,7 +18,7 @@ const Group = () => {
         setInfoGroup(false);
     }
     const openAddInfoGroup = () => {
-        window.open("http://localhost:3000/group/create", '_parent');
+        navigate("/group/create")
     }
     return (
         <div className="bg-gr">
@@ -25,7 +27,7 @@ const Group = () => {
                     <div className='title-grs'>Nhóm</div>
                     <input onKeyDown={(e) => {
                         if (e.code === "Enter") {
-                            window.open("http://localhost:3000/group", '_parent')
+                            navigate("/group")
                         }
                     }} type="text" className="search-grs" placeholder='Tìm kiếm nhóm' />
                     <div className="btn-add-gr" onClick={function (event) { openAddInfoGroup() }}><IoMdAdd className='icon-add-gr' />Tạo nhóm mới</div>

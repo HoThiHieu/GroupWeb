@@ -4,7 +4,6 @@ import Navbar from './navbar'
 
 function MainLayout(props) {
 
-    console.log(props);
     return (
         <>  
             <Navbar/>

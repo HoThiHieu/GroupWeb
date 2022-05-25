@@ -13,12 +13,10 @@ import DetailGroup from './page/group/detail';
 import Chat from './page/chat';
 
 function App() {
-  const [user, setUser] = useState([]);
   return (
     <>
       <Router>
 
-        {/* <Navbar user={user}/> */}
         <Routes>
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
@@ -40,7 +38,7 @@ function App() {
             element={<MainLayout component={AddGroup} />}
           />
           <Route
-            path="/group/0312280"
+            path="/group/detail"
             element={<MainLayout component={DetailGroup} />}
           />
           <Route

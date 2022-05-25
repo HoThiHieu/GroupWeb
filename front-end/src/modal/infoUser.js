@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import moment from 'moment'
 
 
  const UserInfo = ({detail,showInfo,showEdit,userData}) => {
+    const user = JSON.parse(localStorage.getItem("user"))
+    const gender = user.gender ? 'Nam' : 'Nữ'
+    const [birthday, setBirthday] = useState('01-01-2001')
+    useEffect(() => {
+        try {
+            if (user) {
+                const [month, day, year] = moment(user.birthday)
+                    .format('L')
+                    .split('/')
+                setBirthday([day, month, year].join('/'))
+            }
+        } catch (error) {}
+    }, [user])
     return (
         <div className="bg-modal" style={{display: detail ? 'flex' : 'none' }}>
             <div className="modal-content" >
@@ -13,41 +27,42 @@ import React from 'react'
                     <tr>
                         <td>Họ tên</td>
                         {/* <td>{adminData.Full_name}</td> */}
-                        <td>Ho Min Hiu</td>
+                        <td>{user.full_name}</td>
                     </tr>
                     <tr>
-                    <td>Gmail</td>
+                    <td>Email</td>
                         {/* <td>{adminData.Email}</td> */}
-                        <td>oppahd96@gmail.com</td>
+                        <td>{user.email}</td>
                     </tr>
                     <tr>
                     <td>Số điện thoại</td>
                         {/* <td>{adminData.Email}</td> */}
-                        <td>0928488738</td>
+                        <td>{user.phone_number}</td>
                     </tr>
                     <tr>
                     <td>Trường ĐH</td>
                         {/* <td>{adminData.Email}</td> */}
-                        <td>Bách Khoa Đà Nẵng</td>
+                        <td>{user.school_name} </td>
                     </tr>
                     <tr>
                     <td>Địa chỉ</td>
                         {/* <td>{adminData.Email}</td> */}
-                        <td>Đà Nẵng</td>
+                        <td>{user.address}</td>
                     </tr>
                     <tr>
                     <td>Giới tính</td>
                         {/* <td>{adminData.Gender == 1? "Man":"Woman"}</td> */}
-                        <td>Nam</td>
+                        <td>{gender}</td>
                     </tr>
                     <tr>
                     <td>Ngày sinh</td>
                         {/* <td>{adminData.DayOfBirth==null? "2001-01-01":adminData.DayOfBirth}</td> */}
-                        <td>2001-12-03</td>
+                        <td>{birthday}</td>
                     </tr>
                     </tbody></table>
                 </form>
-                <a onClick={function(event){showEdit()}} className="button1">Sửa</a>
+                <button onClick={() => {showEdit()}} className="btn-submit" >Sửa</button>
+                {/* <a onClick={function(event){showEdit()}} className="btn-submit">Sửa</a> */}
             </div>
         </div>
     )

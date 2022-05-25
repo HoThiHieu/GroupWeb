@@ -40,7 +40,7 @@ function App() {
             element={<MainLayout component={AddGroup} />}
           />
           <Route
-            path="/group/0312280"
+            path="/group/detail"
             element={<MainLayout component={DetailGroup} />}
           />
           <Route

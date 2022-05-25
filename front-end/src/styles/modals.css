@@ -181,3 +181,27 @@ textarea{
 .input-file{
 	margin: 10px 0 10px 100px;
 }
+.btn-submit{
+	margin: 15px auto;
+	display: block;
+	width: 100px ;
+	height: 6vh;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(
+		to right,
+		#3e4684,
+		#4d5ec2,
+		#3e4684
+	) !important;
+	background-size: 200%;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+	transition: 0.5s;
+	font-size: medium;
+}
+.btn-submit:hover{
+	background-position: right;
+}

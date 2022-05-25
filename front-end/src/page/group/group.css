@@ -81,13 +81,14 @@ main {
   transition: 0.5s all;
 }
 .btn-add-gr{
-  width: 292px;
-  padding: 10px 14px 10px 14px;
-  height: 20px;
-  border-radius: 12px;
+  height: 50px;
+  width: 315px;
+  border-radius: 15px;
+  border: none;
   text-align: center;
   color: #fff;
   background-color: rgb(78, 129, 205);
+  font-size: 15px;
 }
 .icon-add-gr{
   position: relative;

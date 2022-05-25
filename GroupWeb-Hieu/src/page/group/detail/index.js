@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { IoMdAdd, } from 'react-icons/io'
 import { IoPersonAdd } from 'react-icons/io5'
 import { CgMoreO } from 'react-icons/cg'
@@ -9,6 +9,7 @@ import ItemGroupJoined from '../../../router/itemGroupJoined'
 import './detail-group.css'
 
 const DetailGroup = () => {
+  const navigate = useNavigate()
   return (
     <div className="bg-gr">
       <div className="gr-search">
@@ -16,7 +17,7 @@ const DetailGroup = () => {
           <div className='title-grs'>Nhóm</div>
           <input onKeyDown={(e) => {
             if (e.code === "Enter") {
-              window.open("http://localhost:3000/group", '_parent')
+              navigate("/group")
             }
           }} type="text" className="search-grs" placeholder='Tìm kiếm nhóm' />
           <Link to="/group/create" className="btn-add-gr" ><IoMdAdd className='icon-add-gr' />Tạo nhóm mới</Link>
