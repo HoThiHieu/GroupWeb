@@ -21,14 +21,15 @@ function Register() {
                 password: event.target[4].value,
             }
             const response = await auth.register(user)
+            console.log("response");
             if (response.request.status === 200) {
-                navigate('/login')
                 alert(response.data.message)
+                navigate('/login')
             }
             else  alert(response.data.message)
         } catch (error) {
             //TODO: hiển bị thông báo theo từng error code (error.request.status === 404)
-            alert('Email already exists!')
+            alert(error.message)
         }
     }
     return (
@@ -71,7 +72,7 @@ function Register() {
                                 <input type="password" placeholder="Confirm password" required />
                             </div>
 
-                    <button type="submit" className="button-submit">REGISTER</button>
+                        <button type="submit" className="button-submit">REGISTER</button>
                     <label>
                         Already have an account?{' '}
                          <Link className="create-account" to="/login">
